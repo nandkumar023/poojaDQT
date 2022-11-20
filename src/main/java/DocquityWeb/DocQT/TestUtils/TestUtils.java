@@ -8,7 +8,9 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.*;
+import java.util.*;
+import java.util.function.*;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -26,11 +28,15 @@ import com.google.common.io.Files;
 
 import DocquityWeb.DocQT.Page.Log;
 
+import static java.lang.Thread.sleep;
+
 /**
  * @author SarabjitSingh
  *
  */
 public class TestUtils {
+	static Function<WebDriver,Boolean> testconditioWait;
+	static WebDriverWait wait;
 	
 	public static int PAGE_LOAD_TIMEOUT=20;
 	public static int IMPLICIT_WAIT=30;
@@ -53,9 +59,9 @@ public class TestUtils {
 		driver.navigate().refresh();
 	}
 	
-	public static WebElement waitForVisibilityOf(WebDriver driver, WebElement element) {
+	public static WebElement waitForVisibilityOf(WebDriver driver, WebElement element) throws InterruptedException {
 		Log.debug("Waiting for element to be visible", LOGGER);
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 100);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
@@ -137,7 +143,7 @@ public class TestUtils {
 		}
 	}
 	
-	public static void clickElementUsingJavaScriptExecutor(WebDriver driver, WebElement element) {
+	public static void clickElementUsingJavaScriptExecutor(WebDriver driver, WebElement element) throws InterruptedException {
 		Log.debug("Trying to click element using JavaScript Executor", LOGGER);
 		waitForVisibilityOf(driver, element);
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
@@ -149,5 +155,22 @@ public class TestUtils {
 		Date date = new Date();
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yy");
 		return formatter.format(date);
+	}
+
+	public  static void waitForElement(WebDriver driver,List<WebElement> element) throws Exception {
+		try {
+			testconditioWait = x-> element.size()>0;
+			wait=new WebDriverWait(driver, 10000);
+			wait.until(testconditioWait);
+		}
+		catch (Exception e){
+//			throw new Exception();
+		}
+	}
+	public static void waitForPageLoad(WebDriver driver) throws InterruptedException {
+		sleep(40);
+		wait = new WebDriverWait(driver, 50);
+		wait.until(pageloadWait -> ((JavascriptExecutor) driver).executeScript("return document.readyState")
+				.equals("complete"));
 	}
 }

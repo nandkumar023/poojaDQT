@@ -16,7 +16,7 @@ public class DataProviders {
 	public static Object[][] getLoginData() throws IOException {
 		DataFormatter formattor=new DataFormatter();
 		FileInputStream fis = 
-				new FileInputStream(System.getProperty("user.dir") +"\\src\\test\\resources\\TestData\\Login_TestData.xlsx");
+				new FileInputStream(System.getProperty("user.dir") +"/src/test/resources/TestData/Login_TestData.xlsx");
 		XSSFWorkbook wb=new XSSFWorkbook(fis);
 		XSSFSheet sheet=wb.getSheetAt(0); //Collecting data from first sheet in the workbook. For switching 
 		//between the sheets change the sheet number on line 56.

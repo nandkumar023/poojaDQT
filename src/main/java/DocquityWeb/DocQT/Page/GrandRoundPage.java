@@ -14,7 +14,7 @@ public class GrandRoundPage extends BasePage {
 	
 	private WebDriver driver;
 	private static final Logger LOGGER = LogManager.getLogger(GrandRoundPage.class);
-
+	
 	public GrandRoundPage(WebDriver driver) {
 		super(driver);
 		this.driver= driver;
@@ -119,106 +119,106 @@ public class GrandRoundPage extends BasePage {
 	private WebElement PROFILE_CARD;
 	
 	
-	public void verifyDiscussionSectionIsVisible(final String discussionText) {
+	public void verifyDiscussionSectionIsVisible(final String discussionText) throws InterruptedException {
 		Log.info("Verify visibility of discussion section", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, DISCUSSION_TEXT).getText(), discussionText, "Discussion section is not visible`");
 	}
 	
-	public void verifyClinicalCaseIsVisible(final String clinicalCasesText) {
+	public void verifyClinicalCaseIsVisible(final String clinicalCasesText) throws InterruptedException {
 		Log.info("Verify visibility of clinical cases under the discussion", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, CLINICALCASES_TEXT).getText(), clinicalCasesText, "Clinical cases is not visible`");
 	}
 	
-	public void verifyPollIsVisible(final String pollText) {
+	public void verifyPollIsVisible(final String pollText) throws InterruptedException {
 		Log.info("Verify visibility of poll under the discussion", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, POLL_TEXT).getText(), pollText, "Poll Text is not visible`");
 	}
 
-	public void verifyLearningSectionIsVisible(final String learningText) {
+	public void verifyLearningSectionIsVisible(final String learningText) throws InterruptedException {
 		Log.info("Verify visibility of discussion section", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, LEARNING_TEXT).getText(), learningText, "Learning section is not visible`");
 	}
 	
-	public void verifyCPDIsVisible(final String cpdText) {
+	public void verifyCPDIsVisible(final String cpdText) throws InterruptedException {
 		Log.info("Verify visibility of cpd under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, CPD_TEXT).getText(), cpdText, "CPD is not visible`");
 	}
 	
-	public void verifyArticlesIsVisible(final String articlesText) {
+	public void verifyArticlesIsVisible(final String articlesText) throws InterruptedException {
 		Log.info("Verify visibility of articles under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, ARTICLES_TEXT).getText(), articlesText, "Artciles Text is not visible`");
 	}
 	
 	@Override
-	public GrandRoundPage waitForPage() {
-		//This method will make the script wait until the page is loaded
+	public GrandRoundPage waitForPage() throws InterruptedException {
+		// This method will make the script wait until the page is loaded
 		Log.info("Waiting for home page to be visible", LOGGER);
 		TestUtils.calculatePageLoadTime(driver);
 		TestUtils.waitForVisibilityOf(driver, SEARCH_BAR);
 		return this;
 	}
 
-	public void verifyDoctalksIsVisible(final String doctalksText) {
+	public void verifyDoctalksIsVisible(final String doctalksText) throws InterruptedException {
 		Log.info("Verify visibility of doctalks under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, DOCTALKS_TEXT).getText(), doctalksText, "Doctalks Text is not visible");	
 	}
 
-	public void verifyWebinarsIsVisible(final String webinarsText) {
+	public void verifyWebinarsIsVisible(final String webinarsText) throws InterruptedException {
 		Log.info("Verify visibility of webinars under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, WEBINARS_TEXT).getText(), webinarsText, "Webinars Text is not visible");
 	}
 
-	public void verifyCalendarIsVisible(final String calendarText) {
+	public void verifyCalendarIsVisible(final String calendarText) throws InterruptedException {
 		Log.info("Verify visibility of calendar under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, CALENDAR_TEXT).getText(), calendarText, "Calendar Text is not visible");
 	}
 
-	public void verifyConnectionIsVisible(final String connectionText) {
+	public void verifyConnectionIsVisible(final String connectionText) throws InterruptedException {
 		Log.info("Verify visibility of connection under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, CONNECTION_TEXT).getText(), connectionText, "Connection Text is not visible");
 	}
 	
-	public void verifyDocquityExclusiveSectionIsVisible(final String docquityExclusiveText) {
+	public void verifyDocquityExclusiveSectionIsVisible(final String docquityExclusiveText) throws InterruptedException {
 		Log.info("Verify visibility of docquity Exclusive section", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, DOCQUITY_EXCLUSIVE_TEXT).getText(), docquityExclusiveText, "Docquity exclusive text section is not visible`");
 	}
 	
-	public void verifyEventsIsVisible(final String eventsText) {
+	public void verifyEventsIsVisible(final String eventsText) throws InterruptedException {
 		Log.info("Verify visibility of Events under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, EVENTS_TEXT).getText(), eventsText, "Events Text is not visible");	
 	}
 
-	public void verifyBookMarksIsVisible(final String bookMarksText) {
+	public void verifyBookMarksIsVisible(final String bookMarksText) throws InterruptedException {
 		Log.info("Verify visibility of BookMarks under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, BOOKMARKS_TEXT).getText(), bookMarksText, "BookMarks Text is not visible");
 	}
 
-	public void verifyChannelsIsVisible(final String channelsText) {
+	public void verifyChannelsIsVisible(final String channelsText) throws InterruptedException {
 		Log.info("Verify visibility of channels under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, CHANNELS_TEXT).getText(), channelsText, "Channels Text is not visible");
 	}
 
-	public void verifyPharmaIsVisible(final String pharmaText) {
+	public void verifyPharmaIsVisible(final String pharmaText) throws InterruptedException {
 		Log.info("Verify visibility of pharma under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, PHARMA_TEXT).getText(), pharmaText, "Pharma Text is not visible");
 	}
 	
-	public void verifyNEJMIsVisible(final String nejmText) {
+	public void verifyNEJMIsVisible(final String nejmText) throws InterruptedException {
 		Log.info("Verify visibility of nejm under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, NEJM_TEXT).getText(), nejmText, "NEJM Text is not visible");
 	}
 	
-	public void verifySurveysIsVisible(final String surveysText) {
+	public void verifySurveysIsVisible(final String surveysText) throws InterruptedException {
 		Log.info("Verify visibility of surveys under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, SURVEYS_TEXT).getText(), surveysText, "Surveys is not visible");
 	}
 	
-	public void verifyDrugSamplesIsVisible(final String durgSamplesText) {
+	public void verifyDrugSamplesIsVisible(final String durgSamplesText) throws InterruptedException {
 		Log.info("Verify visibility of drug samples under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, DRUG_SAMPLES_TEXT).getText(), durgSamplesText, "Drug Samples Text is not visible");
 	}
 	
-	public void verifyOnlineEventIsVisible(final String onlineEventText) {
+	public void verifyOnlineEventIsVisible(final String onlineEventText) throws InterruptedException {
 		Log.info("Verify visibility of online event under the learning", LOGGER);
 		Assert.assertEquals(TestUtils.waitForVisibilityOf(driver, ONLINE_EVENT_TEXT).getText(), onlineEventText, "Online Event is not visible");
 	}
@@ -238,7 +238,7 @@ public class GrandRoundPage extends BasePage {
 		START_A_POST.click();
 	}
 	
-	public void enterTextForPost(final String text) {
+	public void enterTextForPost(final String text) throws InterruptedException {
 		Log.info("Entering the text in start a post " +text +TestUtils.currentDate() , LOGGER);
 		TestUtils.waitForVisibilityOf(driver, SHARE_YOUR_THOUGHTS_TEXTAREA).sendKeys(text+TestUtils.currentDate());
 	}
@@ -278,23 +278,23 @@ public class GrandRoundPage extends BasePage {
 		}
 	}
 	
-	public void clickNextButton() {
+	public void clickNextButton() throws InterruptedException {
 		Log.info("Trying to click on the Next Button", LOGGER);
 		TestUtils.clickElementUsingJavaScriptExecutor(driver, NEXT_BUTTON);
 	}
 	
-	public void verifyVisibilityOfisThisIsACaseSwitch() {
+	public void verifyVisibilityOfisThisIsACaseSwitch() throws InterruptedException {
 		Log.info("Verify if is this a case is visible", LOGGER);
 		TestUtils.waitForVisibilityOf(driver, IS_THIS_A_CASE_SWICTH);
 	}
 
-	public void selectFirstSpeciality() {
+	public void selectFirstSpeciality() throws InterruptedException {
 		// TODO Auto-generated method stub
 		Log.info("Trying to select the First Speciality from the list", LOGGER);
 		TestUtils.clickElementUsingJavaScriptExecutor(driver, FIRST_SPECIALITY);
 	}
 	
-	public void clickPostButton() {
+	public void clickPostButton() throws InterruptedException {
 		Log.info("Trying to click on the Post Button", LOGGER);
 		TestUtils.clickElementUsingJavaScriptExecutor(driver, POST_BUTTON);
 	}

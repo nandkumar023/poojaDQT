@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DocquityWeb.DocQT.Test.UserDropDownTest">
+      <class name="DocquityWeb.DocQT.Test.GrandRoundTest">
         <methods>
           <include name="initialization"/>
+          <include name="verifyOptionsUnderUserDropdown" invocation-numbers="0"/>
           <include name="afterMainClass"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="tearDownAfterTest"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
-          <include name="verifyOptionsUnderUserDropdown" invocation-numbers="0"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- DocquityWeb.DocQT.Test.UserDropDownTest -->
+      </class> <!-- DocquityWeb.DocQT.Test.GrandRoundTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

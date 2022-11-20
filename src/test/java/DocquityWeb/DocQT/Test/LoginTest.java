@@ -25,7 +25,9 @@ public class LoginTest extends BaseTest {
 	
 	//Verify user is able to login
 	@Test (dataProvider="loginTest" , dataProviderClass = DataProviders.class, groups= {"SmokeTest"})
-	public void verifySuccessfulUserLogin(final String number, final String otp, final String country) {
+
+	public void verifySuccessfulUserLogin(final String number, final String otp, final String country)
+			throws Exception {
 		driver.get(PostURL);
 		loginPage = new LoginPage(driver).waitForPage();
 		GRPage = loginPage.loginWithMobileAndCountry(number, otp, country);

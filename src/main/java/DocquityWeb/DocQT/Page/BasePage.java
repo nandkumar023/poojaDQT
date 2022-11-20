@@ -34,15 +34,19 @@ import DocquityWeb.DocQT.TestUtils.TestUtils;
 public abstract class BasePage {
 	 
 	public static Properties prop;
-	public static WebDriver driver;
 	public File folder;
+	private WebDriver driver;
+	
 	public BasePage(WebDriver driver) {
 	// TODO Auto-generated constructor stub
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	public abstract BasePage waitForPage();
+	public abstract BasePage waitForPage() throws InterruptedException;
 
-}
+	}
+	
+
+
 

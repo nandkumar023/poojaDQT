@@ -63,15 +63,7 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//span[@class='c-label']/span")
 	private WebElement DEFAULT_COUNTRY;
 	
-	public void pj(){
-//		WebDriverManager.chromedriver().setup();
-	}
-	
-	
-	public void enterMobileNumber(final String mobileNumber) {
-//		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.get("http://website.docquity.com/");
+	public void enterMobileNumber(final String mobileNumber) throws InterruptedException {
 		Log.info("Entering the mobile number" + mobileNumber, LOGGER);
 		TestUtils.waitForVisibilityOf(driver, MOBILE_NUMBER).sendKeys(mobileNumber);
 	}
@@ -81,7 +73,7 @@ public class LoginPage extends BasePage {
 		TestUtils.waitForElementToBeClickable(driver, REQUEST_OTP).click();
 	}
 	
-	public void enterOTP(final String otp) {
+	public void enterOTP(final String otp) throws InterruptedException {
 		Log.info("Trying to enter the OTP" + otp, LOGGER);
 		TestUtils.waitForVisibilityOf(driver, ENTER_OTP).sendKeys(otp);
 	}
@@ -102,13 +94,13 @@ public class LoginPage extends BasePage {
 		TestUtils.waitForElementToBeClickable(driver, COUNTRY_DROPDOWN).click(); 
 	}
 	
-	public void selectCountryFromDropdown(final String country) {
+	public void selectCountryFromDropdown(final String country) throws InterruptedException {
 		Log.info("Selecting country from the dropdown - "+country, LOGGER);
 		TestUtils.waitForElementToBeClickable(driver, COUNTRY_SEARCH).sendKeys(country); 
 		TestUtils.waitForVisibilityOf(driver, FIRST_COUNTRY).click();
 	}
 	
-	public GrandRoundPage loginWithMobileAndCountry(final String number, final String otp, final String country) {
+	public GrandRoundPage loginWithMobileAndCountry(final String number, final String otp, final String country) throws InterruptedException {
 		clickCountryDropdown();
 		selectCountryFromDropdown(country);
 		enterMobileNumber(number);

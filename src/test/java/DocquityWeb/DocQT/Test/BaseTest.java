@@ -102,7 +102,8 @@ public abstract class BaseTest {
 	@BeforeMethod (alwaysRun = true)
 	public void initialization() {
 		LOGGER.debug("<br>*******************        Initializing Browser       ****************************");
-		String browserName=System.getProperty("browser",prop.getProperty("defaultBrowser"));
+//		String browserName=System.getProperty("browser",prop.getProperty("defaultBrowser"));
+		String browserName="Chrome";
 		switch(browserName) {
 		case "Chrome":
 			LOGGER.info("<br>*******************        Opening Chrome Browser       ***************************");
@@ -159,7 +160,7 @@ public abstract class BaseTest {
 	@AfterClass (alwaysRun = true)
 	public void afterMainClass() {
 		LOGGER.debug("*******************    Driver Quit    *********************************");
-		driver.quit();
+//		driver.quit();
 	}
 	
 	@AfterSuite (alwaysRun = true)

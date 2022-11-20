@@ -1,23 +1,17 @@
 package DocquityWeb.DocQT.Test;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import DocquityWeb.DocQT.Page.*;
 import org.testng.annotations.Test;
 
 import DocquityWeb.DocQT.DataProvider.DataProviders;
-import DocquityWeb.DocQT.Page.GrandRoundPage;
-import DocquityWeb.DocQT.Page.LoginPage;
-import DocquityWeb.DocQT.Page.UserDropDownPage;
-import DocquityWeb.DocQT.Page.UserDropDownPage1;
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 
 
 public class UserDropDownTest extends BaseTest {
 
 	GrandRoundPage GRPage;
 	LoginPage loginPage;
-	UserDropDownPage1 userDropDownPage1;
+	UserDropDownPage userDropDownPage;
+	UDP udp;
 
 	public UserDropDownTest() {
 		// TODO Auto-generated constructor stub
@@ -26,30 +20,34 @@ public class UserDropDownTest extends BaseTest {
 
 //Verify the options under the he user dropdown section on the GR
 	@Test(dataProvider = "loginTest", dataProviderClass = DataProviders.class, groups = { "SmokeTest" })
-	public void verifyOptionsUnderUserDropdown(final String number, final String otp, final String country)
-			throws Exception {
-//	
+	public void verifyOptionsUnderUserDropdown(final String number, final String otp, final String country) throws Exception {
 //		driver.get(PostURL);
-//		WebDriverManager.chromedriver().setup();
-//		loginPage = new LoginPage().waitForPage();
-		Thread.sleep(5000);
+		driver.get("http://website.docquity.com/");
+		loginPage = new LoginPage(driver).waitForPage();
 		GRPage = loginPage.loginWithMobileAndCountry(number, otp, country);
-		userDropDownPage1.waitForPage( );
-		userDropDownPage1.clickOnUserDropdown();
-		userDropDownPage1.verifyViewProfileUsermenuIsVisible("View Profile");
-		userDropDownPage1.verifyMyVaultUsermenuIsVisible("My Vault");
-		userDropDownPage1.verifyCalendarUsermenuIsVisible("Calendar");
-		userDropDownPage1.verifyBookmarksUsermenuIsVisible("Bookmarks");
-		userDropDownPage1.verifySettingsUsermenuIsVisible("Settings");
-		userDropDownPage1.verifySendFeedbackUsermenuIsVisible("Send Feedback");
-		userDropDownPage1.verifyTermsConditionsUsermenuIsVisible("Terms & Conditions");
-		userDropDownPage1.verifylogoutUsermenuIsVisible("Logout");
+		Thread.sleep(5000);
+		new UDP(driver).verifyMyProfile();
+		driver.navigate().refresh();
+		new UDP(driver).verifyMyVault();
+
+//		userDropDownPage.waitForPage();
+
+//
+//		userDropDownPage.clickOnUserDropdown();
+//		userDropDownPage.verifyViewProfileUsermenuIsVisible("View Profile");
+//		userDropDownPage.verifyMyVaultUsermenuIsVisible("My Vault");
+//		userDropDownPage.verifyCalendarUsermenuIsVisible("Calendar");
+//		userDropDownPage.verifyBookmarksUsermenuIsVisible("Bookmarks");
+//		userDropDownPage.verifySettingsUsermenuIsVisible("Settings");
+//		userDropDownPage.verifySendFeedbackUsermenuIsVisible("Send Feedback");
+//		userDropDownPage.verifyTermsConditionsUsermenuIsVisible("Terms & Conditions");
+//		userDropDownPage.verifylogoutUsermenuIsVisible("Logout");
 	}
 
 	// @Override
 	public void afterTest() {
 		// TODO Auto-generated method stub
-		driver.quit();
+//		driver.quit();
 	}
 }
 		
