@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-DocquityWeb_DocQT_Test_GrandRoundTest">
+              <span class="suite-name border-failed">DocquityWeb.DocQT.Test.GrandRoundTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-DocquityWeb_DocQT_Test_GrandRoundTest">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-DocquityWeb_DocQT_Test_GrandRoundTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-DocquityWeb_DocQT_Test_GrandRoundTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-DocquityWeb_DocQT_Test_GrandRoundTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-DocquityWeb_DocQT_Test_GrandRoundTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-DocquityWeb_DocQT_Test_GrandRoundTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-DocquityWeb_DocQT_Test_GrandRoundTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DocquityWeb_DocQT_Test_GrandRoundTest" class="hide-methods failed suite-DocquityWeb_DocQT_Test_GrandRoundTest"> (hide)</a> <!-- hide-methods failed suite-DocquityWeb_DocQT_Test_GrandRoundTest -->
+                      <a href="#" panel-name="suite-DocquityWeb_DocQT_Test_GrandRoundTest" class="show-methods failed suite-DocquityWeb_DocQT_Test_GrandRoundTest"> (show)</a> <!-- show-methods failed suite-DocquityWeb_DocQT_Test_GrandRoundTest -->
+                    </span>
+                    <div class="method-list-content failed suite-DocquityWeb_DocQT_Test_GrandRoundTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DocquityWeb_DocQT_Test_GrandRoundTest" title="DocquityWeb.DocQT.Test.GrandRoundTest" hash-for-method="verifyOptionsUnderLearning(9716720366, 1234)">verifyOptionsUnderLearning(9716720366, 1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-DocquityWeb_DocQT_Test_GrandRoundTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-DocquityWeb_DocQT_Test_GrandRoundTest" class="panel DocquityWeb_DocQT_Test_GrandRoundTest">
+          <div class="suite-DocquityWeb_DocQT_Test_GrandRoundTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">DocquityWeb.DocQT.Test.GrandRoundTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOptionsUnderLearning(9716720366, 1234)">
+                  </a> <!-- verifyOptionsUnderLearning(9716720366, 1234) -->
+                  <span class="method-name">verifyOptionsUnderLearning</span>
+                  <span class="parameters">(9716720366, 1234)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Webinars Text is not visible expected [Webins] but found [Webinars]
+	at DocquityWeb.DocQT.Page.GrandRoundPage.verifyWebinarsIsVisible(GrandRoundPage.java:175)
+	at DocquityWeb.DocQT.Test.GrandRoundTest.verifyOptionsUnderLearning(GrandRoundTest.java:55)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DocquityWeb_DocQT_Test_GrandRoundTest-class-failed -->
+        </div> <!-- panel DocquityWeb_DocQT_Test_GrandRoundTest -->
+        <div panel-name="test-xml-DocquityWeb_DocQT_Test_GrandRoundTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;DocquityWeb.DocQT.Test.GrandRoundTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+    &lt;method-selectors&gt;
+      &lt;method-selector&gt;
+        &lt;selector-class name=&quot;org.apache.maven.surefire.testng.utils.MethodSelector&quot; priority=&quot;10000&quot;/&gt;
+      &lt;/method-selector&gt;
+    &lt;/method-selectors&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DocquityWeb.DocQT.Test.GrandRoundTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- DocquityWeb.DocQT.Test.GrandRoundTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-DocquityWeb_DocQT_Test_GrandRoundTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for DocquityWeb.DocQT.Test.GrandRoundTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-DocquityWeb_DocQT_Test_GrandRoundTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for DocquityWeb.DocQT.Test.GrandRoundTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-DocquityWeb_DocQT_Test_GrandRoundTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for DocquityWeb.DocQT.Test.GrandRoundTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_DocquityWeb_DocQT_Test_GrandRoundTest');
+function tableData_DocquityWeb_DocQT_Test_GrandRoundTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyOptionsUnderLearning')
+data.setCell(0, 2, 'DocquityWeb.DocQT.Test.GrandRoundTest')
+data.setCell(0, 3, 11068);
+window.suiteTableData['DocquityWeb_DocQT_Test_GrandRoundTest']= { tableData: data, tableDiv: 'times-div-DocquityWeb_DocQT_Test_GrandRoundTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-DocquityWeb_DocQT_Test_GrandRoundTest">
+              </div> <!-- times-div-DocquityWeb_DocQT_Test_GrandRoundTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-DocquityWeb_DocQT_Test_GrandRoundTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for DocquityWeb.DocQT.Test.GrandRoundTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-DocquityWeb_DocQT_Test_GrandRoundTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">DocquityWeb.DocQT.Test.GrandRoundTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyOptionsUnderDiscussion</span>
+                <br/>
+                <span class="ignored-method-name">clickStartAPost</span>
+                <br/>
+                <span class="ignored-method-name">verifyOptionsUnderDocquityExclusive</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-DocquityWeb_DocQT_Test_GrandRoundTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">DocquityWeb.DocQT.Test.GrandRoundTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">5 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void DocquityWeb.DocQT.Test.GrandRoundTest.verifyOptionsUnderLearning(java.lang.String,java.l...)</span>
+                <span class="method-start">426 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">429 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyOptionsUnderLearning(9716720366, 1234)</span>
+                <span class="method-start">2177 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(public void DocquityWeb.DocQT.Test.GrandRoundTest.verifyOptionsUnderLearning(java.lang.String,java.l...)</span>
+                <span class="method-start">13257 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterMainClass</span>
+                <span class="method-start">14115 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDownAfterTest</span>
+                <span class="method-start">14115 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">14483 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

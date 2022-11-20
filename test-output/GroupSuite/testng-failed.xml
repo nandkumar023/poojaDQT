@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GroupSuite]">
+  <test thread-count="5" name="GroupTest(failed)">
+    <groups>
+      <run>
+        <include name="broken_image"/>
+        <include name="Invalid"/>
+        <include name="Valid"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="HerokuApp.Heroku.Test.FormAuthenticationTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="verifyInValidUsernameAndInValidPassword"/>
+          <include name="beforeTest"/>
+          <include name="initialization"/>
+          <include name="afterMainClass"/>
+          <include name="afterSuite"/>
+          <include name="tearDownAfterTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- HerokuApp.Heroku.Test.FormAuthenticationTest -->
+    </classes>
+  </test> <!-- GroupTest(failed) -->
+</suite> <!-- Failed suite [GroupSuite] -->

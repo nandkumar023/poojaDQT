@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="1" name="TestSuite" time="70.904" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\91971\Downloads\DocquityWeb\DocquityWeb"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\91971\Downloads\DocquityWeb\DocquityWeb"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\91971\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\91971\Downloads\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\91971\Downloads\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\91971\AppData\Local\Microsoft\WindowsApps;C:\Users\91971\AppData\Roaming\npm;C:\Program Files (x86)\Nmap;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\bin;."/>
+    <property name="maven.conf" value="C:\Users\91971\Downloads\apache-maven-3.8.5-bin\apache-maven-3.8.5/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\91971\Downloads\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\91971"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="91971"/>
+    <property name="java.class.path" value="C:\Users\91971\Downloads\apache-maven-3.8.5-bin\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\91971\Downloads\apache-maven-3.8.5-bin\apache-maven-3.8.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="DocquityWeb.DocQT.Test.GrandRoundTest" name="clickStartAPost" time="23.706"/>
+  <testcase classname="DocquityWeb.DocQT.Test.GrandRoundTest" name="verifyOptionsUnderDiscussion" time="10.972"/>
+  <testcase classname="DocquityWeb.DocQT.Test.GrandRoundTest" name="verifyOptionsUnderDocquityExclusive" time="11.695"/>
+  <testcase classname="DocquityWeb.DocQT.Test.GrandRoundTest" name="verifyOptionsUnderLearning" time="11.639">
+    <failure message="Webinars Text is not visible expected [Webins] but found [Webinars]" type="java.lang.AssertionError">java.lang.AssertionError: Webinars Text is not visible expected [Webins] but found [Webinars]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at DocquityWeb.DocQT.Page.HomePage.verifyWebinarsIsVisible(HomePage.java:175)
+	at DocquityWeb.DocQT.Test.GrandRoundTest.verifyOptionsUnderLearning(GrandRoundTest.java:55)
+</failure>
+    <system-out>[DEBUG] 2022-07-25 13:34:40.984 [main] BaseTest - &lt;br&gt;XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+[DEBUG] 2022-07-25 13:34:40.984 [main] BaseTest - &lt;br&gt;X
+[DEBUG] 2022-07-25 13:34:40.984 [main] BaseTest - &lt;br&gt;X
+[DEBUG] 2022-07-25 13:34:40.984 [main] BaseTest - &lt;br&gt;X
+[DEBUG] 2022-07-25 13:34:41.582 [main] BaseTest - &lt;br&gt;****************************************************************************************
+[DEBUG] 2022-07-25 13:34:41.582 [main] BaseTest - &lt;br&gt;****************************************************************************************
+[DEBUG] 2022-07-25 13:34:41.582 [main] BaseTest - &lt;br&gt;$$$$$$$$$$$$$$$$$$$$              verifyOptionsUnderLearning       $$$$$$$$$$$$$$$$$$$$$$$
+[DEBUG] 2022-07-25 13:34:41.582 [main] BaseTest - &lt;br&gt;****************************************************************************************
+[DEBUG] 2022-07-25 13:34:41.582 [main] BaseTest - &lt;br&gt;****************************************************************************************
+[DEBUG] 2022-07-25 13:34:41.582 [main] BaseTest - &lt;br&gt;*******************        Initializing Browser       ****************************
+[INFO ] 2022-07-25 13:34:41.582 [main] BaseTest - &lt;br&gt;*******************        Opening Chrome Browser       ***************************
+[DEBUG] 2022-07-25 13:34:49.039 [main] TestUtils - Calculating the page load time
+[INFO ] 2022-07-25 13:34:49.045 [main] TestUtils - Page load time calculated in seconds is 6.339
+[INFO ] 2022-07-25 13:34:49.045 [main] LoginPage - Entering the mobile number9716720366
+[DEBUG] 2022-07-25 13:34:49.045 [main] TestUtils - Waiting for element to be visible
+[INFO ] 2022-07-25 13:34:49.171 [main] LoginPage - Trying to click on the Request OTP button
+[DEBUG] 2022-07-25 13:34:49.171 [main] TestUtils - Waiting for element to be clickable 
+[INFO ] 2022-07-25 13:34:49.278 [main] LoginPage - Trying to enter the OTP1234
+[DEBUG] 2022-07-25 13:34:49.278 [main] TestUtils - Waiting for element to be visible
+[INFO ] 2022-07-25 13:34:50.328 [main] LoginPage - Trying to click on the Verify Button
+[DEBUG] 2022-07-25 13:34:50.328 [main] TestUtils - Waiting for element to be clickable 
+[INFO ] 2022-07-25 13:34:50.428 [main] HomePage - Waiting for home page to be visible
+[DEBUG] 2022-07-25 13:34:50.428 [main] TestUtils - Calculating the page load time
+[INFO ] 2022-07-25 13:34:50.445 [main] TestUtils - Page load time calculated in seconds is 6.339
+[DEBUG] 2022-07-25 13:34:50.446 [main] TestUtils - Waiting for element to be visible
+[INFO ] 2022-07-25 13:34:53.996 [main] HomePage - Verify visibility of discussion section
+[DEBUG] 2022-07-25 13:34:53.996 [main] TestUtils - Waiting for element to be visible
+[INFO ] 2022-07-25 13:34:54.055 [main] HomePage - Verify visibility of articles under the learning
+[DEBUG] 2022-07-25 13:34:54.056 [main] TestUtils - Waiting for element to be visible
+[INFO ] 2022-07-25 13:34:54.127 [main] HomePage - Verify visibility of cpd under the learning
+[DEBUG] 2022-07-25 13:34:54.127 [main] TestUtils - Waiting for element to be visible
+[INFO ] 2022-07-25 13:34:54.186 [main] HomePage - Verify visibility of doctalks under the learning
+[DEBUG] 2022-07-25 13:34:54.186 [main] TestUtils - Waiting for element to be visible
+[INFO ] 2022-07-25 13:34:54.234 [main] HomePage - Verify visibility of webinars under the learning
+[DEBUG] 2022-07-25 13:34:54.234 [main] TestUtils - Waiting for element to be visible
+</system-out>
+    <system-err>Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 16732
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 25, 2022 1:34:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="DocquityWeb.DocQT.Test.LoginTest" name="verifySuccessfulUserLogin" time="12.892"/>
+</testsuite>

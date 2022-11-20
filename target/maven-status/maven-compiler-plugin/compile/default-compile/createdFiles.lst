@@ -1,0 +1,10 @@
+DocquityWeb\DocQT\Analyzer\Transformer.class
+DocquityWeb\DocQT\Page\BasePage.class
+DocquityWeb\DocQT\TestUtils\WaitTime.class
+DocquityWeb\DocQT\DataProvider\DataProviders.class
+DocquityWeb\DocQT\TestUtils\EmailTestReportUtilities.class
+DocquityWeb\DocQT\Analyzer\RetryAnalyzer.class
+DocquityWeb\DocQT\Page\Log.class
+DocquityWeb\DocQT\Page\LoginPage.class
+DocquityWeb\DocQT\TestUtils\TestUtils.class
+DocquityWeb\DocQT\TestUtils\GmailUtilities.class
